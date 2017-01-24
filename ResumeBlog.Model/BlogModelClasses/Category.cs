@@ -5,10 +5,7 @@ namespace ResumeBlog.Model.BlogModelClasses
 {
     public class Category
     {
-        public Category()
-        {
-            Posts =new List<Post>();
-        }
+
         public Guid Id { get; set; }
 
 
@@ -20,6 +17,6 @@ namespace ResumeBlog.Model.BlogModelClasses
 
    //     public int PRI { get; set; }
 
-        public IEnumerable<Post> Posts { get; set; }
+        public IEnumerable<Post> Posts { get; set; } = new List<Post>();
     }
 }

@@ -4,7 +4,7 @@ namespace ResumeBlog.Model.ResumeModelClasses
 {
     public class WorkExperience
     {
-        public long Id { get; set; }
+        public int Id { get; set; }
 
     //    [Localized]
     //    [MaxLength(512)]

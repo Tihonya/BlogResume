@@ -1,16 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ResumeBlog.Model.ResumeModelClasses
 {
     public class Education
     {
-        public long Id { get; set; }
+        public int Id { get; set; }
 //        [MaxLength(512)]
         public string School { get; set; }
 
         public string Profession { get; set; }
 
-        public string About { get; set; }
+        public IEnumerable<KeyPoint> KeyPoints { get; set; } = new List<KeyPoint>();
 
         public DateTime From { get; set; }
 

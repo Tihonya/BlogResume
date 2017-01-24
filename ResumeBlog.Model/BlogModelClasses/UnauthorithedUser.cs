@@ -4,10 +4,6 @@ namespace ResumeBlog.Model.BlogModelClasses
 {
     public class UnauthorizedUser
     {
-        public UnauthorizedUser()
-        {
-            Comments =new List<Comment>();
-        }
 
         public int Id { get; set; }
 
@@ -15,8 +11,6 @@ namespace ResumeBlog.Model.BlogModelClasses
 
         public string Ip { get; set; }
 
-        public IEnumerable<Comment> Comments { get; set; }
-
-
+        public IEnumerable<Comment> Comments { get; set; } = new List<Comment>();
     }
 }

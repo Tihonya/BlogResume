@@ -64,6 +64,7 @@
     <Compile Include="ResumeModelClasses\Education.cs" />
     <Compile Include="BlogModelClasses\Post.cs" />
     <Compile Include="BlogModelClasses\PostTag.cs" />
+    <Compile Include="ResumeModelClasses\KeyPoint.cs" />
     <Compile Include="ResumeModelClasses\Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResumeModelClasses\Skill.cs" />
