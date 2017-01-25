@@ -11,7 +11,6 @@ namespace ResumeBlog.Model
     public class UserIdentity : IdentityUser
     {
 
-
         public string FirstName { get; set; }
 
         public string MiddleName { get; set; }
@@ -34,14 +33,15 @@ namespace ResumeBlog.Model
 
         public Company Company { get; set; }
 
-
         public DeveloperProfile DeveloperProfile { get; set; }
 
         public int? DeveloperProfileId { get; set; }
 
-        public IEnumerable<Post> Posts { get; set; } = new List<Post>();
+        public List<Post> Posts { get; set; } = new List<Post>();
 
-        public IEnumerable<Comment> Comments { get; set; } = new List<Comment>();
+        public List<Comment> Comments { get; set; } = new List<Comment>();
+
+        public bool IsBlocked { get; set; }
 
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<UserIdentity> manager)

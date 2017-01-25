@@ -1,24 +1,19 @@
-﻿using System;
+﻿using ResumeBlog.Model.Interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace ResumeBlog.Model.BlogModelClasses
 {
-    public class Post // : IConvertible<PostViewModel>
+    public class Post : IModificationHistory  // : IConvertible<PostViewModel> 
     {
 
-        public Post()
-        {
-            Tags=new List<PostTag>();
-            Comments=new List<Comment>();
 
-        }
         public Guid Id { get; set; }
 
         public UserIdentity Author { get; set; }
 
         public string AuthorId { get; set; }
 
-       // [MaxLength(256)]
         public string Url { get; set; }
 
         public string Title { get; set; }
@@ -26,24 +21,27 @@ namespace ResumeBlog.Model.BlogModelClasses
         public string Summary { get; set; }
 
         public string Content { get; set; }
-
-        public DateTime Time { get; set; }
-
+        
         public bool IsPublished { get; set; }
 
-      //  [ForeignKey("Category")]
         public Guid CategoryId { get; set; }
 
         public Category Category { get; set; }
 
-        public  IEnumerable<PostTag> Tags { get; set; }
+        //Full delete only for admin
+        public bool IsDeleted { get; set; }
 
-        public IEnumerable<Comment> Comments { get; set; }
+        public  List<PostTag> Tags { get; set; } = new List<PostTag>();
 
+        public List<Comment> Comments { get; set; } = new List<Comment>();
 
-        
+        public DateTime DateModified { get; set; }
 
+        public DateTime DateCreated { get; set; }
 
+        public string ModificationAppliedBy { get; set; }
+
+        public bool IsDirty { get; set; }
 
 
         //PostViewModel IConvertible<PostViewModel>.ToType()

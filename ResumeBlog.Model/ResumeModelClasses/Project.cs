@@ -1,19 +1,17 @@
-﻿using System;
+﻿using ResumeBlog.Model.Interfaces;
+using System;
 
 namespace ResumeBlog.Model.ResumeModelClasses
 {
-    public class Project
+    public class Project : ICheckChanges
     {
         public int Id { get; set; }
 
-   //     [MaxLength(256)]
         public string Title { get; set; }
 
-  //      [MaxLength(1024)]
         public string Description { get; set; }
 
         public string GitHub { get; set; }
-
 
         public string DemoUrl { get; set; }
 
@@ -21,6 +19,8 @@ namespace ResumeBlog.Model.ResumeModelClasses
 
         public DateTime? To { get; set; }
 
+        public string DeveloperId { get; set; }
 
+        public bool IsDirty { get; set; }
     }
 }

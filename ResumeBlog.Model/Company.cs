@@ -2,7 +2,6 @@
 {
     public class Company
     {
-        public int Id { get; set; }
 
         public string UserId { get; set; }
 
@@ -20,7 +19,8 @@
 
 
         //TODO: Extend this model(through remove field OfferDetails and adding additional tables)
-        //TODO: something like auction system,- for recruiters.
+        //TODO: something like auction system,- for recruiters. 
+        //TODO: (Only after implementation good working UI for whole existed model)
         public string OfferDetails { get; set; }
 
     }

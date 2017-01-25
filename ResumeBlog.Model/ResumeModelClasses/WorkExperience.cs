@@ -1,13 +1,12 @@
-﻿using System;
+﻿using ResumeBlog.Model.Interfaces;
+using System;
 
 namespace ResumeBlog.Model.ResumeModelClasses
 {
-    public class WorkExperience
+    public class WorkExperience : ICheckChanges
     {
         public int Id { get; set; }
 
-    //    [Localized]
-    //    [MaxLength(512)]
         public string CompanyName { get; set; }
 
         public string Position { get; set; }
@@ -17,5 +16,7 @@ namespace ResumeBlog.Model.ResumeModelClasses
         public DateTime From { get; set; }
 
         public DateTime? To { get; set; }
+
+        public bool IsDirty { get; set; }
     }
 }

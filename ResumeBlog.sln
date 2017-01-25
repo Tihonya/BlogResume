@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResumeBlog.Model", "ResumeBlog.Model\ResumeBlog.Model.csproj", "{DEA981F6-8D7B-4C67-AB7F-7887C395128F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResumeBlog.DataLayer", "ResumeBlog.DataLayer\ResumeBlog.DataLayer.csproj", "{25A07435-AAF8-4E77-8B25-F6B4407525AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DEA981F6-8D7B-4C67-AB7F-7887C395128F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEA981F6-8D7B-4C67-AB7F-7887C395128F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEA981F6-8D7B-4C67-AB7F-7887C395128F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25A07435-AAF8-4E77-8B25-F6B4407525AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25A07435-AAF8-4E77-8B25-F6B4407525AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25A07435-AAF8-4E77-8B25-F6B4407525AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25A07435-AAF8-4E77-8B25-F6B4407525AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

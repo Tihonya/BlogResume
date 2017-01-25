@@ -11,6 +11,8 @@ namespace ResumeBlog.Model.BlogModelClasses
 
         public string Ip { get; set; }
 
-        public IEnumerable<Comment> Comments { get; set; } = new List<Comment>();
+        public bool IsBlocked { get; set; }
+
+        public List<Comment> Comments { get; set; } = new List<Comment>();
     }
 }

@@ -1,12 +1,11 @@
-﻿using System;
+﻿using ResumeBlog.Model.Interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace ResumeBlog.Model.ResumeModelClasses
 {
-    public class DeveloperProfile
+    public class DeveloperProfile : ICheckChanges
     {
-
-        public int Id { get; set; }
 
         public string UserId { get; set; }
 
@@ -30,13 +29,14 @@ namespace ResumeBlog.Model.ResumeModelClasses
 
         public string AdditionalInformation  { get; set; }
 
-        public IEnumerable<Skill> Skills { get; set; } = new List<Skill>();
+        public List<Skill> Skills { get; set; } = new List<Skill>();
 
-        public IEnumerable<Project> Projects { get; set; } = new List<Project>();
+        public List<Project> Projects { get; set; } = new List<Project>();
 
-        public IEnumerable<Education> Educations { get; set; } = new List<Education>();
+        public List<Education> Educations { get; set; } = new List<Education>();
 
-        public IEnumerable<WorkExperience> WorkExperiences { get; set; } = new List<WorkExperience>();
+        public List<WorkExperience> WorkExperiences { get; set; } = new List<WorkExperience>();
 
+        public bool IsDirty { get; set; }
     }
 }

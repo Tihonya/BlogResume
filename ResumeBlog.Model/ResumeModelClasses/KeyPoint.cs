@@ -6,8 +6,6 @@
 
         public string About { get; set; }
 
-        public int EducationId { get; set; }
 
-        public Education Education { get; set; }
     }
 }
