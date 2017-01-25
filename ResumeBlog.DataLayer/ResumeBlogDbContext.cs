@@ -39,6 +39,8 @@ namespace ResumeBlog.DataLayer
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Types<ICheckChanges>().Configure(c=>c.Ignore(p=>p.IsDirty));
+
             modelBuilder.Configurations.Add(new UserIdentityConfiguration());
 
             modelBuilder.Configurations.Add(new CategoryConfiguration());

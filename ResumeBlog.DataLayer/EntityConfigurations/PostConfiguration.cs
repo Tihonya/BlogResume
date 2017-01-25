@@ -29,8 +29,6 @@ namespace ResumeBlog.DataLayer.EntityConfigurations
             Property(c => c.ModificationAppliedBy)
                 .HasMaxLength(128);
 
-            Ignore(c => c.IsDirty);
-
         }
     }
 }

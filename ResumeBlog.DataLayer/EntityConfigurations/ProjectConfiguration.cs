@@ -16,7 +16,6 @@ namespace ResumeBlog.DataLayer.EntityConfigurations
             Property(p => p.GitHub).HasMaxLength(256);
             Property(p => p.DemoUrl).HasMaxLength(256);
 
-            Ignore(p => p.IsDirty);
 
         }
     }

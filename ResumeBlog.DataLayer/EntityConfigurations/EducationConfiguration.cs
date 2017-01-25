@@ -17,7 +17,6 @@ namespace ResumeBlog.DataLayer.EntityConfigurations
                 .WithRequired()
                 .WillCascadeOnDelete(true);
 
-            Ignore(e => e.IsDirty);
         }
     }
 }

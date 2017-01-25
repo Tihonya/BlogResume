@@ -12,8 +12,6 @@ namespace ResumeBlog.DataLayer.EntityConfigurations
 
             Property(s => s.Level).IsRequired();
 
-            Ignore(s => s.IsDirty);
-
         }
     }
 }

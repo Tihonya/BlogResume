@@ -16,7 +16,6 @@ namespace ResumeBlog.DataLayer.EntityConfigurations
             Property(we => we.Description)
                 .HasMaxLength(1024);
 
-            Ignore(we => we.IsDirty);
         }
     }
 }
