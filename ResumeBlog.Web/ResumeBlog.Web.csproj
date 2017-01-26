@@ -212,7 +212,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -286,6 +285,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ResumeBlog.DataLayer\ResumeBlog.DataLayer.csproj">
+      <Project>{25A07435-AAF8-4E77-8B25-F6B4407525AE}</Project>
+      <Name>ResumeBlog.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResumeBlog.Model\ResumeBlog.Model.csproj">
+      <Project>{DEA981F6-8D7B-4C67-AB7F-7887C395128F}</Project>
+      <Name>ResumeBlog.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

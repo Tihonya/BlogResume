@@ -67,6 +67,11 @@
     <Compile Include="EntityConfigurations\PostConfiguration.cs" />
     <Compile Include="EntityConfigurations\PostTagConfiguration.cs" />
     <Compile Include="EntityConfigurations\ProjectConfiguration.cs" />
+    <Compile Include="Migrations\201701260715394_Initial.cs" />
+    <Compile Include="Migrations\201701260715394_Initial.Designer.cs">
+      <DependentUpon>201701260715394_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Repositories\Blog\BadIpRepository.cs" />
     <Compile Include="Repositories\Blog\CategoryRepository.cs" />
     <Compile Include="Repositories\Resume\WorkExperienceRepository.cs" />
@@ -99,7 +104,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701260715394_Initial.resx">
+      <DependentUpon>201701260715394_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
