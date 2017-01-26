@@ -6,7 +6,8 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using ResumeBlog.Web.Models;
+using ResumeBlog.Web.ViewModels;
+using ResumeBlog.Web.ViewModels.ManageViewModels;
 
 namespace ResumeBlog.Web.Controllers
 {

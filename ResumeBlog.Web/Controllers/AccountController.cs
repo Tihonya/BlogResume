@@ -9,7 +9,8 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using ResumeBlog.Model;
-using ResumeBlog.Web.Models;
+using ResumeBlog.Web.ViewModels;
+using ResumeBlog.Web.ViewModels.AccountViewModels;
 
 namespace ResumeBlog.Web.Controllers
 {

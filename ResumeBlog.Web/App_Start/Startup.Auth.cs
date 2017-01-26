@@ -7,7 +7,7 @@ using Microsoft.Owin.Security.Google;
 using Owin;
 using ResumeBlog.DataLayer;
 using ResumeBlog.Model;
-using ResumeBlog.Web.Models;
+using ResumeBlog.Web.ViewModels;
 
 namespace ResumeBlog.Web
 {

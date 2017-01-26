@@ -12,7 +12,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using ResumeBlog.DataLayer;
 using ResumeBlog.Model;
-using ResumeBlog.Web.Models;
+using ResumeBlog.Web.ViewModels;
 
 namespace ResumeBlog.Web
 {
