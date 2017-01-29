@@ -4,6 +4,15 @@ namespace ResumeBlog.Web.ViewModels.AccountViewModels
 {
     public class RegisterViewModel
     {
+
+        [Required]
+        [Display(Name = "Nick-name(uniqe)")]
+        [StringLength(255)]
+        public string NickName { get; set; }
+        [Required]
+        [StringLength(22,ErrorMessage = "You first-name must be below 23 characters long.")]
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
@@ -19,5 +28,7 @@ namespace ResumeBlog.Web.ViewModels.AccountViewModels
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+
     }
 }

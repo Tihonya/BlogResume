@@ -28,22 +28,26 @@ textarea {
 /*Override Bootstrap.css*/
 
 
-@media (min-width: 1200px), (min-width: 992px), (min-width: 768px) {
+/*@media (min-width: 1200px), (min-width: 992px), (min-width: 768px) {
     .container {
         max-width: 100%;
     }
-}
+}*/
 
-
-.container.body-content {
-    background: #ebe6e6;
-    min-height: 500px;
+.extend-body-container {
+    background-color: #ebe6e6;
+    max-width: 100%;
+    min-height: 600px;
     padding: 40px 0px;
     position: relative;
     z-index: 5;
     padding-right: 0;
     padding-left: 0;
 }
+
+/*.container.body-content {
+    background: #ebe6e6;
+}*/
 
 .site-footer {
      margin: 50px 0;

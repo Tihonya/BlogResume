@@ -1,0 +1,20 @@
+﻿@model System.Collections.Generic.List<ResumeBlog.Model.BlogModelClasses.Post>
+
+@{
+    ViewBag.Title = "title";
+  //  Layout = "_Layout";
+}
+@foreach (var post in Model)
+{
+
+    <h2>@post.Title</h2>
+    @Html.Label(post.Category.Title);
+
+
+    <p>
+        @post.Content
+    </p>
+
+
+}
+

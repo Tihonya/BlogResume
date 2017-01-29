@@ -1,16 +1,12 @@
-﻿using System;
-using System.Globalization;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Mvc;
-using Microsoft.AspNet.Identity;
+﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using ResumeBlog.Model;
-using ResumeBlog.Web.ViewModels;
 using ResumeBlog.Web.ViewModels.AccountViewModels;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Mvc;
 
 namespace ResumeBlog.Web.Controllers
 {
@@ -153,7 +149,7 @@ namespace ResumeBlog.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new UserIdentity { UserName = model.Email, Email = model.Email };
+                var user = new UserIdentity { UserName = model.NickName, Email = model.Email, FirstName = model.FirstName};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
